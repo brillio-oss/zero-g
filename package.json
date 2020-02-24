@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Zero G frontend for Brillio",
-  "homepage": "https://github.com/brillio-oss/zero-g#readme",
+  "homepage": "https://zero-g.now.sh",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brillio-oss/zero-g.git"
