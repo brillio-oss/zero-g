@@ -22,7 +22,8 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,6 +32,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
+    "lint:style": "stylelint './src/**/*.js'",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
     "lint": "eslint --fix src/**/*.js"
   },
@@ -74,12 +76,15 @@
     "@storybook/addon-viewport": "^5.3.13",
     "@storybook/addons": "^5.3.13",
     "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.13"
+    "@storybook/react": "^5.3.13",
+    "babel-plugin-macros": "^2.8.0",
+    "stylelint": "^13.2.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "npm run format"
-    ]
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": []
   },
   "husky": {
     "hooks": {
