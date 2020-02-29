@@ -1,8 +1,5 @@
 <h1 align="center">Welcome to zero-g 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/zero-g" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/zero-g.svg">
-  </a>
   <img src="https://img.shields.io/badge/npm-%3E%3D6.2.1-blue.svg" />
   <img src="https://img.shields.io/badge/node-%3E%3D12.3.1-blue.svg" />
   <img src="https://img.shields.io/badge/yarn-%3E%3D1.16.0-blue.svg" />

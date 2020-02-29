@@ -1,6 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import { Route, Router } from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import history from "./utils/history";
+import { AuthWrapper } from "./components/AuthWrapper";
+
+const Routes = () => {
+  return (
+    <Router history={history}>
+      <Route path="/" render={props => <AuthWrapper {...props} />} />
+    </Router>
+  );
+};
+
+ReactDOM.render(<Routes />, document.getElementById("root"));
