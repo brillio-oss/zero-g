@@ -5,6 +5,7 @@ import { NavBar } from "../NavBar";
 import { Loading } from "../Loading";
 import { createApolloClient } from "../../utils/apollo-client";
 import { useAuth } from "../../auth";
+import { Subscription } from "../../components/Subscription";
 
 export const App = ({ idToken }) => {
   const { loading, logout } = useAuth();
@@ -19,6 +20,7 @@ export const App = ({ idToken }) => {
     <ApolloProvider client={client}>
       <div className="App">
         <NavBar logoutHandler={logout} />
+        <Subscription />
       </div>
     </ApolloProvider>
   );
