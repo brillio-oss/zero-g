@@ -5,7 +5,6 @@ import {
   TableBody,
   TableCell,
   TableRow,
-  TableFooter,
   Grommet,
   Box,
   Text
@@ -16,45 +15,42 @@ export const PreviousSprintA = () => {
   return (
     <Grommet theme={theme}>
       <Header background="#f5f5f5" direction="column" gap="none">
-        <h2>Realtor New Homes - Board A</h2>
-        <h3>Description of Projects - Description of Boards</h3>
+        <h2>Realtor New Homes</h2>
+        <h3>Previous Sprint - 2/27 - 3/11 Mysore pak</h3>
       </Header>
       <Box direction="row" gap="small" width="stretch">
-        <Box width="100%" margin={{ horizontal: "10%", vertical: "5%" }}>
-          <Table size={{ xxsmall: "48px" }}>
+        <Box width="100%" margin={{ horizontal: "10%", vertical: "10%" }}>
+          <Table>
             <TableBody>
               <TableRow>
-                <TableFooter>
-                  <TableCell>Overall Health</TableCell>
-                  <TableCell>Green/Amber/Red</TableCell>
-                </TableFooter>
+                <TableCell>Overall Health</TableCell>
+                <TableCell>Green</TableCell>
               </TableRow>
 
-              <TableFooter>
-                <TableRow>
-                  <TableCell>Started Since</TableCell>
-                  <TableCell>10-10-20</TableCell>
-                </TableRow>
-              </TableFooter>
-              <TableFooter>
-                <TableRow>
-                  <TableCell>Number of Sprints</TableCell>
-                  <TableCell>N</TableCell>
-                </TableRow>
-              </TableFooter>
-              <TableFooter>
-                <TableRow>
-                  <TableCell>Stories in Backlog</TableCell>
-                  <TableCell>N</TableCell>
-                </TableRow>
-              </TableFooter>
-              <TableFooter>
-                <TableRow>
-                  <TableCell>Number of future sprints</TableCell>
-                  <TableCell>N</TableCell>
-                </TableRow>
-              </TableFooter>
-              <TableFooter></TableFooter>
+              <TableRow>
+                <TableCell>Started On</TableCell>
+                <TableCell>27 Feb 2020</TableCell>
+              </TableRow>
+
+              <TableRow>
+                <TableCell>Ended On</TableCell>
+                <TableCell>11 Mar 2020</TableCell>
+              </TableRow>
+
+              <TableRow>
+                <TableCell>Number of Tickets</TableCell>
+                <TableCell>16</TableCell>
+              </TableRow>
+
+              <TableRow>
+                <TableCell>Stories in Backlog</TableCell>
+                <TableCell>42</TableCell>
+              </TableRow>
+
+              <TableRow>
+                <TableCell>Number of future sprints</TableCell>
+                <TableCell>3</TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </Box>
@@ -62,15 +58,15 @@ export const PreviousSprintA = () => {
           width="100%"
           gap="small"
           direction="column"
-          margin={{ vertical: "5%", right: "5%" }}
+          margin={{ vertical: "10%", right: "5%" }}
         >
           <Box gap="small" direction="row">
             <Box pad="medium" background="#089626" width="stretch">
               <Text alignSelf="center" color="white" weight="bold">
-                Velocity
+              Committed
               </Text>
               <Text alignSelf="center" color="white" weight="bold">
-                N
+                48
               </Text>
             </Box>
             <Box pad="medium" background="#089626" width="stretch">
@@ -78,17 +74,17 @@ export const PreviousSprintA = () => {
                 Delivered
               </Text>
               <Text alignSelf="center" color="white" weight="bold">
-                N
+                46
               </Text>
             </Box>
           </Box>
           <Box gap="small" direction="row">
             <Box pad="medium" background="#089626" width="stretch">
               <Text alignSelf="center" color="white" weight="bold">
-                Committed
+              Velocity
               </Text>
               <Text alignSelf="center" color="white" weight="bold">
-                N
+                45
               </Text>
             </Box>
             <Box pad="medium" background="#089626" width="stretch">
@@ -96,7 +92,7 @@ export const PreviousSprintA = () => {
                 Cycle Time
               </Text>
               <Text alignSelf="center" color="white" weight="bold">
-                N
+                5d 2h
               </Text>
             </Box>
           </Box>

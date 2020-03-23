@@ -7,7 +7,7 @@ export const NavBar = ({ logoutHandler }) => {
   return (
     <Header background="dark-1" pad="medium">
       <Box direction="row" align="center" gap="small">
-        <Anchor color="white" href="https://zero-g.now.sh">
+        <Anchor color="white" href="/">
           Ground Zero
         </Anchor>
       </Box>

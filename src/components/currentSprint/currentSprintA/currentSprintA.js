@@ -5,7 +5,6 @@ import {
   TableBody,
   TableCell,
   TableRow,
-  TableFooter,
   Grommet,
   Box,
   Text
@@ -17,49 +16,46 @@ export const CurrentSprintA = () => {
     <div>
       <Grommet theme={theme}>
         <Header background="#f5f5f5" direction="column" gap="none">
-          <h2>Realtor New Homes - Board A</h2>
-          <h3>Description of Projects - Description of Boards</h3>
+          <h2>Realtor New Homes</h2>
+          <h3>Current Sprint - 3/12 - 3/25 Jalebi</h3>
         </Header>
         <Box direction="row" gap="small" width="stretch" responsive={true}>
           <Box
             width="100%"
-            margin={{ horizontal: "10%", vertical: "5%" }}
+            margin={{ horizontal: "10%", vertical: "10%" }}
             responsive={true}
           >
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableFooter>
-                    <TableCell>Overall Health</TableCell>
-                    <TableCell>Green/Amber/Red</TableCell>
-                  </TableFooter>
+                  <TableCell>Overall Health</TableCell>
+                  <TableCell>Amber</TableCell>
                 </TableRow>
 
-                <TableFooter>
-                  <TableRow>
-                    <TableCell>Started Since</TableCell>
-                    <TableCell>10-10-20</TableCell>
-                  </TableRow>
-                </TableFooter>
-                <TableFooter>
-                  <TableRow>
-                    <TableCell>Number of Sprints</TableCell>
-                    <TableCell>N</TableCell>
-                  </TableRow>
-                </TableFooter>
-                <TableFooter>
-                  <TableRow>
-                    <TableCell>Stories in Backlog</TableCell>
-                    <TableCell>N</TableCell>
-                  </TableRow>
-                </TableFooter>
-                <TableFooter>
-                  <TableRow>
-                    <TableCell>Number of future sprints</TableCell>
-                    <TableCell>N</TableCell>
-                  </TableRow>
-                </TableFooter>
-                <TableFooter></TableFooter>
+                <TableRow>
+                  <TableCell>Started On</TableCell>
+                  <TableCell>12 Mar 2020</TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell>Ends On</TableCell>
+                  <TableCell>25 Mar 2020</TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell>Number of Tickets</TableCell>
+                  <TableCell>21</TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell>Stories in Backlog</TableCell>
+                  <TableCell>42</TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell>Number of future sprints</TableCell>
+                  <TableCell>4</TableCell>
+                </TableRow>
               </TableBody>
             </Table>
           </Box>
@@ -68,7 +64,7 @@ export const CurrentSprintA = () => {
             width="100%"
             gap="small"
             direction="column"
-            margin={{ vertical: "5%", right: "5%" }}
+            margin={{ vertical: "10%", right: "5%" }}
             responsive={true}
           >
             <Box gap="small" direction="row" responsive={true}>
@@ -79,10 +75,10 @@ export const CurrentSprintA = () => {
                 responsive={true}
               >
                 <Text alignSelf="center" color="white" weight="bold">
-                  Velocity
+                  Committed
                 </Text>
                 <Text alignSelf="center" color="white" weight="bold">
-                  N
+                  45
                 </Text>
               </Box>
               <Box
@@ -95,7 +91,7 @@ export const CurrentSprintA = () => {
                   Delivered
                 </Text>
                 <Text alignSelf="center" color="white" weight="bold">
-                  N
+                  42
                 </Text>
               </Box>
             </Box>
@@ -107,10 +103,10 @@ export const CurrentSprintA = () => {
                 responsive={true}
               >
                 <Text alignSelf="center" color="white" weight="bold">
-                  Committed
+                  Velocity
                 </Text>
                 <Text alignSelf="center" color="white" weight="bold">
-                  N
+                  35
                 </Text>
               </Box>
               <Box
@@ -123,7 +119,7 @@ export const CurrentSprintA = () => {
                   Cycle Time
                 </Text>
                 <Text alignSelf="center" color="white" weight="bold">
-                  N
+                  4d 6h
                 </Text>
               </Box>
             </Box>
