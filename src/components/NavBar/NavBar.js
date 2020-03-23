@@ -4,6 +4,8 @@ import history from "../../utils/history";
 import { Logout } from "../Logout";
 
 export const NavBar = ({ logoutHandler }) => {
+  const isDashboardPath = window.location.pathname.includes("dashboard");
+
   return (
     <Header background="dark-1" pad="medium">
       <Box direction="row" align="center" gap="small">
@@ -12,14 +14,16 @@ export const NavBar = ({ logoutHandler }) => {
         </Anchor>
       </Box>
       <Nav direction="row">
-        <Button
-          gap="small"
-          onClick={() => {
-            history.push("/dashboard");
-          }}
-        >
-          Take me to Dashboard
-        </Button>
+        {!isDashboardPath && (
+          <Button
+            gap="small"
+            onClick={() => {
+              history.push("/dashboard");
+            }}
+          >
+            Take me to Dashboard
+          </Button>
+        )}
         <Logout logoutHandler={logoutHandler} />
       </Nav>
     </Header>

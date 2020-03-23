@@ -26,6 +26,7 @@ export const App = ({ idToken }) => {
         <Router history={history}>
           <Switch>
             <Route path="/" exact component={Subscription} />
+            <Route path="/callback" exact component={Subscription} />
             <Route path="/dashboard" component={Dashboard} />
           </Switch>
         </Router>

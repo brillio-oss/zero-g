@@ -28,63 +28,58 @@ export const Subscription = () => {
         boards: [
           {
             b_id: "1.1",
-            b_key: "RNH B1",
-            b_name: "Board 1"
+            b_key: "RNH",
+            b_name: "Realtor New Homes"
           },
           {
             b_id: "1.2",
-            b_key: "RNH B2",
-            b_name: "Board 2"
+            b_key: "ONH",
+            b_name: "Overall New Homes"
           }
         ]
       },
       {
         id: 2,
-        key: "VWS",
-        name: "Verizon Wireless Solutions",
+        key: "WRUX",
+        name: "Web Return User Experience",
         boards: [
           {
             b_id: "2.1",
-            b_key: "VWS B1",
-            b_name: "Board 1"
-          },
-          {
-            b_id: "2.2",
-            b_key: "VWS B2",
-            b_name: "Board 2"
+            b_key: "WRUX",
+            b_name: "Web User Experience"
           }
         ]
       },
       {
         id: 3,
-        key: "MCP",
-        name: "Mastercard Cashless Payments",
+        key: "SEO",
+        name: "Search Engine Optimization",
         boards: [
           {
             b_id: "3.1",
-            b_key: "MCP B1",
+            b_key: "SEO B1",
             b_name: "Board 1"
           },
           {
             b_id: "3.2",
-            b_key: "MCP B2",
+            b_key: "SEO B2",
             b_name: "Board 2"
           }
         ]
       },
       {
         id: 4,
-        key: "Z-G",
-        name: "Zero-G",
+        key: "WEBP",
+        name: "Web Platform",
         boards: [
           {
             b_id: "4.1",
-            b_key: "Z-G B1",
+            b_key: "WEBP B1",
             b_name: "Board 1"
           },
           {
             b_id: "4.2",
-            b_key: "Z-G B2",
+            b_key: "WEBP B2",
             b_name: "Board 2"
           }
         ]
@@ -122,10 +117,10 @@ export const Subscription = () => {
             <Accordion animate={true} multiple={false} margin="small">
               <TableHeader>
                 <TableRow>
-                  <TableCell scope="col" border="bottom">
+                  <TableCell scope="col">
                     Project ID
                   </TableCell>
-                  <TableCell scope="col" border="bottom">
+                  <TableCell scope="col">
                     Project Name
                   </TableCell>
                 </TableRow>
