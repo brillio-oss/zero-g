@@ -1,7 +1,7 @@
 import React from "react";
-import { Anchor, Box, Header, Nav } from "grommet";
-
-import { Logout } from "../Logout"
+import { Anchor, Box, Header, Nav, Button } from "grommet";
+import history from "../../utils/history";
+import { Logout } from "../Logout";
 
 export const NavBar = ({ logoutHandler }) => {
   return (
@@ -12,6 +12,14 @@ export const NavBar = ({ logoutHandler }) => {
         </Anchor>
       </Box>
       <Nav direction="row">
+        <Button
+          gap="small"
+          onClick={() => {
+            history.push("/dashboard");
+          }}
+        >
+          Take me to Dashboard
+        </Button>
         <Logout logoutHandler={logoutHandler} />
       </Nav>
     </Header>
